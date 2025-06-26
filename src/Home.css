@@ -1,0 +1,180 @@
+/* Home.css - Replica of Purplefolio hero section */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+  color: #23242a;
+}
+
+.home-section {
+  min-height: 100vh;
+  padding: 0;
+  background: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 4rem auto 0 auto;
+  padding: 0 4vw;
+  gap: 2rem;
+}
+.hero-content {
+  flex: 1 1 60%;
+  min-width: 320px;
+}
+.intro {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #23242a;
+  font-weight: 500;
+}
+.wave {
+  font-size: 1.2em;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 0.5rem 0 1.5rem 0;
+}
+.front {
+  color: #7c3aed;
+  font-size: 1.1em;
+}
+.end {
+  color: #23242a;
+}
+.developer {
+  color: #23242a;
+}
+.subtitle {
+  font-size: 1.3rem;
+  color: #5a5a5a;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  border-radius: 0.6rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.btn.primary {
+  background: #7c3aed;
+  color: #fff;
+  border-color: #7c3aed;
+}
+.btn.primary:hover {
+  background: #5b21b6;
+  border-color: #5b21b6;
+}
+.btn.secondary {
+  background: #fff;
+  color: #23242a;
+  border: 2px solid #23242a;
+}
+.btn.secondary:hover {
+  background: #f3f3f3;
+}
+.hero-image {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-outline {
+  border: 2px solid #c4b5fd;
+  border-radius: 50%;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+  margin-top: 150px;
+  
+}
+.profile-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  background: #eee;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2.5rem 4vw 0 4vw;
+  background: transparent;
+  z-index: 10;
+}
+
+.nav-top-right {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #23242a;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-btn:hover, .nav-btn.active {
+  color: #7c3aed;
+  background: #f3f3f3;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .hero-image {
+    align-self: center;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    padding: 0 2vw;
+    margin-top: 2rem;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .circle-outline {
+    width: 180px;
+    height: 180px;
+    padding: 0.7rem;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
