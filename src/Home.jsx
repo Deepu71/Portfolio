@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import profileImg from './assets/profile.jpg';
 
 const Home = () => (
   <>
@@ -26,7 +27,7 @@ const Home = () => (
         </div>
         <div className="hero-image">
           <div className="circle-outline">
-            <img src="/prfile.jpg" className="profile-img" />
+            <img src={profileImg} className="profile-img" />
           </div>
         </div>
       </div>
